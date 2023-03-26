@@ -205,3 +205,11 @@ select{
 .item>a:focus,.item>a:hover{
   color: #ED4C5C;
 }
+.select{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../homework4/img/ChevronDown\(E70D\).svg);
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+}
