@@ -39,7 +39,7 @@ table{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-left: -2px;
-    background-image: url(/homework5/img/imgonline-com-ua-Resize-hMjXwKh1inS5.png);
+    background-image: url(../homework5/img/imgonline-com-ua-Resize-hMjXwKh1inS5.png);
     background-repeat: no-repeat;
     background-position: right;
     width: 60px;
@@ -60,7 +60,7 @@ td{
     
 }
 .empty{
-    background-image: url(/homework5/img/dots_three_icon_172496.png);
+    background-image: url(../homework5/img/dots_three_icon_172496.png);
     background-repeat: no-repeat;
     background-position: center;
     filter: contrast(0.2);
@@ -81,7 +81,7 @@ td{
     text-align: right;
 }
 .table3-search{
-    background-image: url(/homework5/img/imgonline-com-ua-Resize-IzZFxfcEggMDl.png);
+    background-image: url(../homework5/img/imgonline-com-ua-Resize-IzZFxfcEggMDl.png);
     background-repeat: no-repeat;
     background-position: 5px 10px;
     padding: 10px 25px;
