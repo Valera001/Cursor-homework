@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: rgb(44 44 44); 
+}
+.table1,.table2,.table3{
+    width: 55vw;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    border: 1px solid rgb(81 81 81);
+    border-radius: 6px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: rgb(44 44 44);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: -2px;
+    background-image: url(/homework5/img/imgonline-com-ua-Resize-hMjXwKh1inS5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 60px;
+
+}
+td,th{
+    text-align: left;
+    padding: 12px;    
+}
+td{
+   border-top: 1px solid rgb(81 81 81); 
+}
+.name{
+    width: 50%;
+}
+.color-group{
+    color: rgb(161, 159, 159);
+    
+}
+.empty{
+    background-image: url(/homework5/img/dots_three_icon_172496.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: contrast(0.2);
+}  
+
+.empty-color{
+    filter: invert(1);
+}
+/*--------------------------------*/
+
+.checkbox{
+    margin-right: 10px;
+}
+
+/*----------------------------------*/
+.table3-empty-top{
+    padding: 2px;
+    text-align: right;
+}
+.table3-search{
+    background-image: url(/homework5/img/imgonline-com-ua-Resize-IzZFxfcEggMDl.png);
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: rgb(161, 159, 159);
+    filter: invert(0.7);
+    border: none;
+}
+
+.table3-empty{
+    background-position: 194px 7px;
+    filter: invert(1);
+}
