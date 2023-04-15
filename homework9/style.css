@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align:top;
+}
+
+
+/*---------------------------------*/
+/*------------------------------------*/
+
+.header{
+    background: url(../homework9/img/bg-head.png) no-repeat right;
+    background-color: #F4F6F9;
+}
+
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__container {
+    padding-top: 61px;
+    padding-bottom: 164px;
+    max-width: 546px;
+}
+.header__title {
+    padding-top: 133px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #333333;;
+}
+.header__subtitle {
+    padding-top: 30px;
+}
+
+.download {
+    padding-top: 50px;
+    display: flex;
+    gap: 36px;
+
+}
+
+/*---------------------------------*/
+/*------------------------------------*/
+
+
+.football-experience {
+    background:linear-gradient(270deg, #FFFFFF 48.16%, rgba(255, 255, 255, 0) 117.14%), url(../homework9/img/bd-2blok.png) no-repeat left;
+    background-size: contain;
+}
+
+.football-experience__container{
+    padding: 109px 0 117px; 
+    display: flex;
+}
+.picture {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.picture-box-full{
+    position: relative; 
+    width: 450px;
+    height: 100%;
+
+}
+.picture-box-top{
+    position: absolute;
+    z-index: 3;
+}
+
+.picture-box{
+    border-radius: 4px;
+}
+.picture-box-bottom{ 
+    position: absolute;
+    z-index: 2;
+    top: 51%;
+    left: 19%;
+    
+}
+.pic{
+    border-radius: 5px;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+}
+.content-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.title{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+}
+.link{
+    font-weight: 700;
+    line-height: 21px;
+    color: #00ADEE;
+}
+.link:hover{
+    color: #0091c5
+}
+
+.football-experience__text {
+    max-width: 407px;
+    
+}
+
+/*---------------------------------*/
+/*------------------------------------*/
+.interface{
+    background: url(../homework9/img/SAMPLE05.png) no-repeat right;
+}
+
+.interface__container{
+    padding: 215px 0 170px;
+}
+
+.interface__text{
+    max-width: 478px;
+}
+
+.interface__img{
+    display: none;
+}
+/*---------------------------------*/
+/*------------------------------------*/
+.features{
+    background: url(../homework9/img/Group696.png)no-repeat center;
+    background-size: cover;
+}
+
+.features__container{
+    padding: 76px 0 16px;
+}
+.features__title{
+    color: #fff;
+    text-align: center;
+}
+
+
+.features__container-cards{
+    padding-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 10%;
+    color: #fff;
+}
+
+.container-card-text{
+    padding-top: 10px;
+    line-height: 23px;
+}
+
+
+/*---------------------------------*/
+/*------------------------------------*/
+.slider__container{
+    padding: 62px 0 50px;
+}
+.wrapper-slider{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.slider__list{
+    display: inline-flex;
+    gap: 35px;
+    overflow: overlay;
+}
+.slider__content{
+    display: flex;
+    position: relative;
+}
+.slider__content::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255, 255, 255, 1));
+}
+.slider__content::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255, 255, 1));
+}
+
+.arrows-left{
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    
+}
+.arrows-right{
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+}
+.slider__title{
+    text-align: center ;
+    padding-bottom: 60px;
+}
+
+.slider-dot{
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+/*---------------------------------*/
+/*------------------------------------*/
+.partners{
+    background: #FAFAFA;
+}
+
+.partners-container{
+    padding: 57px 0 68px;
+}
+
+.partners__title{
+    text-align: center;
+}
+.partners-box-pic{
+    padding-top: 58px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/*---------------------------------*/
+/*------------------------------------*/
+
+.invitation{
+background: url(../homework9/img/Frame2.png)no-repeat left;
+background-size: contain;
+}
+.invitation__container {
+    padding: 100px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invitation-box{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.invitation__text{
+    max-width: 530px;
+}
+.download-bottom{
+    padding-top: 35px;
+}
+
+.invitation__img{display: none;}
+/*---------------------------------*/
+/*------------------------------------*/
+.footer{
+    background: #00ADEE;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 51px 0;
+    flex-wrap: wrap;
+}
+
+.nav-list{
+    display: flex;
+    gap: 35px;
+} 
+.nav-item:hover{
+    color: black;
+    font-weight: 700;
+}
+.social{
+    display: flex;
+    gap: 17px;
+}
+
+.svg-color1:hover{
+    fill:#052632
+}
+
+/*---------------------------------*/
+/*------------------------------------*/
+
+@media screen and (max-width: 1260px){
+    .header{
+        background-position: 450px 0;
+        background-attachment: scroll;
+    }
+    .interface{
+        background-position: -240px -14px;
+        background-attachment: scroll;
+    }
+
+    .invitation{
+        background-position: right 570px bottom 0;
+        background-attachment: scroll;
+    }
+
+    .features__container-cards{
+        grid-column-gap: 5%;
+    }
+
+    .arrows-left{
+        left: 2%;
+    }
+    .arrows-right{
+        right: 2%;
+    }
+
+}
+
+@media screen and (max-width: 890px){
+    .picture-box-top {
+        top: 13%;
+    }
+
+    .picture-box-bottom {
+        top: 46%;
+    }
+    .football-experience{
+        background-size: cover;
+    }
+    .partners-box-pic{
+        gap: 25px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+}
+}
+
+@media screen and (max-width: 720px){
+    
+    .header{ 
+        background: none;   
+    background-color: #F4F6F9;
+    }
+
+    .header__container {
+        max-width: 100%;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 59px;
+    }
+    .download {
+        gap: 28px;
+        justify-content: center;
+    }
+    .header__title {
+            padding-top: 86px;
+            font-size: 30px;
+            line-height: 40px;
+    }
+    .football-experience{
+        background: none;
+    }
+    .football-experience__container {
+        padding: 24px 0 0 0;
+        flex-direction: column-reverse;
+    }
+
+    .content-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 27px;
+ 
+    }
+    .content-text{
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .football-experience>.wrapper{
+        padding: 0;
+    }
+    .football-experience__desc{
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .picture{
+        width: 100%;
+        background: url(../homework9/img/bd-2blok.png)no-repeat center;    
+        height: 390px;
+        justify-content: center;
+        position: relative;
+    }
+    .picture::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.4));
+    }
+
+    .picture-box-full{
+        width: 310px;
+
+    }
+    .pic{
+        box-shadow:none;
+    }
+
+    .interface{
+        background: none;
+    }
+    .interface__container{
+        padding: 62px 0 0 0;
+        width: 100vw;
+        max-width: 100%;
+    }
+    .interface__img{
+        display: inherit;
+        background: url(../homework9/img/tel/Group717.png)no-repeat center;
+        width: 100vw;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .interface__img::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    }
+
+    .interface__img::before{
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    }
+
+    .features{
+    background: none;
+
+    }
+
+    .features__title{
+        color: #333333;
+    }
+.features__container-cards{
+    padding: 54px 10px 10px 0;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-row-gap: 50px;
+    grid-column-gap: none;
+    color: #4F4F4F; 
+}
+
+.features__container-card{
+    text-align: center;
+}
+.svg-color{
+    fill: #00ADEE;
+}
+
+.nav-list{
+    gap: 18px;
+}
+
+.invitation{
+    background: none;
+
+}
+.invitation__container{
+    justify-content: center;
+    padding: 19px 0 46px;
+}
+.invitation__title{
+    text-align: center;
+}
+.invitation__text{
+    text-align: center;
+}
+
+.invitation__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer__container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+.social{
+    order: 1;
+}
+.footer__nav{
+    margin-top: 34px;
+    order: 2;
+}
+
+}
+
+@media screen and (max-width: 361px){
+    .arrows-left{
+        display: none;
+    }
+
+}
