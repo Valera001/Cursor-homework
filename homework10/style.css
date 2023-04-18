@@ -1,0 +1,188 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+body {
+    line-height: 1;
+    max-width: 100%;
+}
+
+/*------------------------------*/
+
+.animation-1 {
+    height: 100%;
+    margin: 0 auto;
+    background: url(https://img.freepik.com/premium-photo/night-starry-sky-high-resolution-photo_361360-1219.jpg?w=740) no-repeat center;
+    background-size: cover;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sword{
+    width: 170px;
+    height: 12px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background: #89888a;
+}
+.sword1 {
+    transition: opacity 1s;
+    transition:2s ease;
+}
+
+.sword2 {
+    transition:2s ease;
+}
+.sword2>.sword-handle {
+    float: right;
+    margin-right: 10px;
+}
+.sword3 {
+    transition:2s ease;
+}
+.sword-handle {
+    margin-left: 10px;
+    width: 20px;
+    height: 10px;
+    background: black;
+}
+
+.animation-1:hover .sword1{
+    transform: translate(0,70%);
+    box-shadow: 0px 0px 5px 5px rgba(140,211,183,0.8);
+    opacity: 0;
+    transition:2s ease;
+}
+.animation-1:hover .sword2{
+    transform: rotate(55deg);
+    box-shadow: 0px 0px 5px 5px rgba(123, 152, 255,0.8);
+    background: #1616fd;
+    transition: 2s ease;
+}
+.animation-1:hover .sword3{
+    transform: translate(0,-177%) rotate(-55deg);
+    box-shadow: 0px 0px 5px 5px rgba(255, 123, 123, 0.8);
+    background: #fd1616;
+    transition: 2s ease;
+}
+
+.animation-2{
+    margin: 50px auto;
+    height: 150px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient( to right, #2939c9 30%, #58cdb4 45% 55%, #2f7576 70%);
+    background-attachment: fixed;
+}
+
+.ball::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    background: rgb(153, 151, 151);
+    border-radius: 50%;
+    width: 50px;
+    height: 10px;
+    box-shadow: 0px 0px 26px 2px;
+    opacity: 0.2;
+
+}
+.ball-left {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    animation-name:ball-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.ball-left>.ball{
+    background: #3764c3;
+}
+.ball-right>.ball{
+    background:#3b8e88;
+}
+.ball-right {
+
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    animation-name:ball-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes ball-left{
+
+    25%{
+        transform-origin:top right;
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+
+
+}
+
+@keyframes ball-right{
+
+    25%{
+        transform-origin:top left;
+        transform: rotate(-50deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+}
