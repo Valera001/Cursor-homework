@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/Playfair_Display/playfairdisplay-regular-webfont.woff2") format("woff2"),
+           url("../fonts/Playfair_Display/playfairdisplay-regular-webfont.woff") format("woff");
+           font-weight: normal;
+           font-style: normal;
+        }
+
+   @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("../fonts/Poppins/poppins-light-webfont.woff2") format("woff2"),
+           url("../fonts/Poppins/poppins-light-webfont.woff") format("woff");
+           font-weight: 300;
+           font-style: normal;
+        }
+
+       @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("../fonts/Poppins/poppins-regular-webfont.woff2") format("woff2"),
+           url("../fonts/Poppins/poppins-regular-webfont.woff") format("woff");
+           font-weight: 400;
+           font-style: normal;
+        }
+
+       @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("../fonts/Poppins/poppins-semibold-webfont.woff2") format("woff2"),
+           url("../fonts/Poppins/poppins-semibold-webfont.woff") format("woff");
+           font-weight: 600;
+           font-style: normal;
+        }
+
+           @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    src: url("../fonts/Poppins/poppins-bold-webfont.woff2") format("woff2"),
+           url("../fonts/Poppins/poppins-bold-webfont.woff") format("woff");
+           font-weight: 700;
+           font-style: normal;
+        }
